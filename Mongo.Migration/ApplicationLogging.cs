@@ -10,10 +10,9 @@ public class ApplicationLogging
 	}
 
 	/// <summary>
-	/// Cria uma instancia do logFactory
+	/// Create logFactory instance
 	/// </summary>
-	/// <param name="equipment">Objeto com os dados do equipamento</param>
-	/// <returns>Instancia da logger Factory</returns>
+	/// <returns>Logger factory instance</returns>
 	public static ILoggerFactory LoggerFactory
 	{
 		get
@@ -28,8 +27,8 @@ public class ApplicationLogging
 	}
 
 	/// <summary>
-	/// Retorna uma instancia do ILogger configurada para ser usada nas migrações
+	/// creates a logger instance configured to use in migrations
 	/// </summary>
-	/// <returns>Instancia do ILogger</returns>
+	/// <returns>ILogger instance</returns>
 	public static ILogger CreateLogger() => LoggerFactory.CreateLogger("logger");
 }
